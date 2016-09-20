@@ -8,14 +8,9 @@ import { ProtocolsComponent } from './components/protocols/protocols.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
-  //{ path: 'header', component: HeaderComponent }
-  // { path: 'login', component: LoginComponent },
+  { path: 'header', component: HeaderComponent },
   { path: 'about', component: AboutComponent },
-  // { path: 'protocols', component: ProtocolsComponent },
-  // { path: 'protocols/:id', component: ProtocolsComponent },
-  // { path: 'home', component: HomeComponent},
-  { path: '', component: AboutComponent }
-  // { path: '**', component: HomeComponent }
+  { path: '', component: HomeComponent }
 ];
 
 export const appRoutingProviders: any[] = [

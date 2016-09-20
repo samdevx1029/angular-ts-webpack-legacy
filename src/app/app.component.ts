@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import '../../public/css/styles.css';
+import { MenubarModule, MenuItem } from 'primeng/primeng';
 
 @Component({
   moduleId: module.id.toString(),
