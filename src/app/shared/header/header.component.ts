@@ -1,4 +1,4 @@
-import { OnInit, Component } from '@angular/core';
+import { OnInit, Component, ViewEncapsulation } from '@angular/core';
 import { Menubar, MenuItem } from 'primeng/primeng';
 
 @Component({

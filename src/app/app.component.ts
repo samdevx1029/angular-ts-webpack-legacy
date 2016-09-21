@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 
 import '../../public/css/styles.css';
+import '../../node_modules/primeng/resources/themes/omega/theme.css';
+import '../../node_modules/primeng/resources/primeng.css';
+import '../../node_modules/font-awesome/css/font-awesome.min.css';
+
 import { MenubarModule, MenuItem } from 'primeng/primeng';
 
 @Component({
@@ -10,5 +14,5 @@ import { MenubarModule, MenuItem } from 'primeng/primeng';
   styles: [require('./app.component.css')]
 })
 export class AppComponent {
-  title = 'my app works real good!';
+  title = 'My App';
 }

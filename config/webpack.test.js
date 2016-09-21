@@ -16,7 +16,6 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html'
-
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
@@ -31,6 +30,10 @@ module.exports = {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
         loader: 'raw'
+      },
+      {
+        test: /fonts\/.*\.(woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader?name="[name]-[hash].[ext]"',
       }
     ]
   }
