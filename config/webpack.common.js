@@ -20,7 +20,8 @@ module.exports = {
     loaders:  [
       { test: /\.tsx?$/, loader: 'ts-loader' },
       { test: /\.html$/, loader: 'html' },
-      { test: /\.(png|jpe?g|gif|ico)$/, loader: 'file?name=assets/[name].[hash].[ext]' },
+      { test: /\.(ico)$/, loader: 'file' },
+      { test: /\.(png|jpe?g|gif)$/, loader: 'file?name=assets/[name].[hash].[ext]' },
       { test: /\.less$/, loader: 'style-loader!css-loader!less-loader' },
       { test: /\.css$/, exclude: helpers.root('src', 'app'), loader: ExtractTextPlugin.extract('style', 'css?sourceMap') },
       { test: /\.css$/, include: helpers.root('src', 'app'), loader: 'raw' },
@@ -37,7 +38,8 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      favicon: 'src/app/favicon.ico'
     }),
 
     failPlugin

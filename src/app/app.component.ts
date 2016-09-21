@@ -4,6 +4,7 @@ import '../../public/css/styles.css';
 import '../../node_modules/primeng/resources/themes/omega/theme.css';
 import '../../node_modules/primeng/resources/primeng.css';
 import '../../node_modules/font-awesome/css/font-awesome.min.css';
+import '../../src/app/favicon.ico';
 
 import { MenubarModule, MenuItem } from 'primeng/primeng';
 
