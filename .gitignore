@@ -32,3 +32,9 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
+# typescript artifacts
+src/app/*.js
+src/app/*.map
+src/app/**/*.js
+src/app/**/*.map
